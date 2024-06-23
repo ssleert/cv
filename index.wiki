@@ -1,0 +1,79 @@
+== Ryabinkov Semyon ==
+===== Go Developer / DevOps Engineer =====
+-----
+
+* Info - Self taught, unix maniac and slackware & openbsd user.
+    * Active `Linux` user since childhood.
+    * Open-Source enthusiast.
+    * Vim & i3wm user.
+    * Stickered thinkpad enjoyer. {{https://raw.githubusercontent.com/ssleert/cv/main/stickered_swag.jpg|stickered swag|style="width:10px"}}
+* Linked
+  * [[https://ssleert.github.io/cv/|CV web version]] - [[https://ssleert.github.io/cv/|ssleert.github.io/cv]]
+  * [[https://github.com/ssleert|Github]]
+  * [[https://t.me/ssleert|Telegram]] [preferred]
+  * [[mailto:ssleert@gmail.com|Email]] - ssleert@gmail.com
+
+=== Work experience ===
+* *OOO "PROKSI"* | April 2023 - April 2024, 1 year
+  * Developed a document management system for creating *IE* and *reports*.
+    Specifically, generation of `PKI CSR` certificates using a patched `OpenSSL`
+    for Russian GOST standards, as well as their renewal and signing by various users.
+    * Stack: `Go` `PHP` `Kafka` `PostgreSQL`
+  - Rewrote a legacy monolith from `PHP` to `Go`, improving *performance* and *maintainability*.
+  - Implemented a metrics collection system using `Grafana` and `Prometheus` for *enhanced* monitoring and insights.
+  - Deployed a cloud and Kubernetes-ready infrastructure using `podman play kube`.
+  - *Increased* system *reliability* by developing extensive *integration* tests.
+
+=== Education ===
+* *DEMHACK 7* hackathon | 29 September 2023 - 1 October 2023
+  * Developed a system for *analyzing* `DNS` requests and automatically 
+    bypassing website blocks based on open lists of blocked sites 
+    from various countries.
+  * Implemented *automated selection* of working *proxies*
+    by checking and caching their status.
+
+=== Pet Projects === 
+* [[https://github.com/ssleert/zfxtop|zfxtop]]
+  * *TUI* utility in `Go` for monitoring *processor*, *ram*, *swap*,
+    *battery percentages*, *temperature*, *disks*. Written 
+    from scratch including the entire *TUI* and gathering
+    statistics via `procfs` and a couple of *syscalls*. 
+    ([[https://www.reddit.com/r/unixporn/comments/11cfas8/oc_zfxtop_fetch_top_for_gen_z_with_x|Reddit Post]])
+
+* [[https://github.com/ssleert/hywer|Hywer]]
+  * *World Smallest*^(~1.5kb)^, `JSX` based, Fine Grained Reactive `UI` Library.
+    Super performant & Virtual DOM *Free*. 
+    ([[https://www.reddit.com/r/javascript/comments/1b8j23r/hywerjs_world_smallest_1kb_jsxbased_reactive_ui|Reddit Post]])
+    * Example frontend using it [[https://github.com/Lights-Social/lights-web-hywer|Lights]].
+      And testing ground for changes.
+
+* [[https://github.com/ssleert/WaterMelonCoin|WaterMelonCoin]]
+  * Compact *Proof-Of-Work* blockchain written in `C99`. Primarily created for reusable libraries in other projects.
+    * [[https://github.com/ssleert/pyblock|PyBlock]] - similar project in `Python` worth remembering.
+
+* [[https://github.com/zpx64/supreme-octopus|supreme-octopus]]
+  * Social network with `REST API`, implemented in `Go` and `PostgreSQL`, served by `Nginx` and deployed via `Docker Compose`.
+
+* [[https://github.com/ssleert/ccc|ccc]]
+  * Cache cleaning daemon in `C`. Created to address inefficient memory freeing by older kernels causing heavy `swap` usage and slowdowns in *GTA V* on `Linux`. The game would even crash due to `oom` without `swap`.
+
+=== Research Projects ===
+  * [[https://github.com/ssleert/asyncness|asyncness]]
+    * stackless coroutines with async/await for `C99`.
+      Mostly used in microcontrollers.
+  * [[https://github.com/ssleert/flick|Flick]] 
+    * Social network with backend in `C++` using `fastcgi+http3` and `msgpack`.
+      My playground for C++26 and various bleeding edge stack.
+  * [[https://github.com/ssleert/watch|watch(1)]] - `watch(1)` for `OpenBSD`. Because it's not there out of the box.
+
+=== Skills ===
+* Programming Languages:
+  * `Go` `C++` `C` `Python` `PHP`
+* Database Management Systems (DBMS):
+  * `PostgreSQL(pgx)` `MySQL` `MongoDB`
+
+* DevOps Tools and Technologies:
+  * `Swagger` `Docker/Podman` `ci/cd` `k8s`
+
+* Development and Server Tools:
+  * `Nginx` `Make` `CMake` `Linux`
