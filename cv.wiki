@@ -1,12 +1,10 @@
-== Ryabinkov Semyon ==
+== Simon Ryabinkov ==
 ===== Go Developer / DevOps Engineer =====
 -----
 
-* Info - Self taught, unix maniac and slackware & openbsd user.
-    * Active `Linux` user since childhood.
-    * Open-Source enthusiast.
-    * Vim & i3wm user.
-    * Stickered thinkpad enjoyer. {{https://raw.githubusercontent.com/ssleert/cv/main/stickered_swag.jpg|stickered swag|style="width:10px"}}
+=== About Me ===
+I'm _Simon_, a *Software Engineer*, dedicated to delivering *high-quality software* at speed. My expertise spans *fintech* and *banking systems*, *document processing*, *analytical data systems*, and *product development* from the ground up. I have a strong background in *team leadership*, *modernizing legacy systems*, and *effective communication* with *business stakeholders*.
+
 * Linked
   * [[https://ssleert.github.io/cv/|CV web version]] - [[https://ssleert.github.io/cv/|ssleert.github.io/cv]]
   * [[https://github.com/ssleert|Github]]
@@ -14,11 +12,37 @@
   * [[mailto:ssleert@gmail.com|Email]] - ssleert@gmail.com
 
 === Work experience ===
-* *OOO "PROKSI"* | April 2023 - April 2024, 1 year
-  * Developed a document management system for creating *IE* and *reports*.
+- *Antarex Payment Solutions* | April 2024 - April 2025, 1 year 
+  - _Participated_ in the _development_ of *multi-currency payment system* and *p2p acquiring*. 
+    Specifically _implemented_ *invoice* and *withdrawal* _support_ for such currencies
+    as `PHP`, `KES`, `GHS`, `TJS`, `KZT`, `TRY` and `AZN` as well as support for *trans-border transfers*
+    via _*Fast Payment System*_.
+    - *Stack:* `Go`, `PostgreSQL`, `Kafka`, `ClickHouse`, `Redis`
+  - Developed _over *20 integrations*_ with external *payment solutions*.  
+  - Designed *transaction verification and synchronization* with _external systems_.
+  - Implemented a *withdraw system for mobile operators* (`Beeline`, `MTC`, `Megafon`).
+  - *Rewrote and refactored* more than 30 services.
+  - *Developed* a *large number* of *utility systems* to *integrate* external _*payment solutions*_ *faster* and more *efficiently*.
+
+- *Russian Robots Startup* | February 2025 - March 2025, 1 month
+  - _*Led* the *development* of a *prototype*_ site aggregator of _news_, _customers_, _suppliers_
+    and _integrators_ in the _*field of robotics*_ in _Russia_.
+    - *Stack:*
+      - *Frontend:* `Next.js`, `shadcn`, `TailwindCSS`
+      - *Backend:* `NodeJS`, `Express.js`, `SQLite3`
+
+- *Liquid Crypto Wallet* | October 2024 - December 2024, 3 month
+  - _Engaged_ in *tech leadership* in *crypto wallet development*, prioritizing *openness* and *security*.
+    Experienced in *integration* with *fiat currency systems* for seamless *exchange*.
+    - *Stack:*
+      - *Frontend:* `Next.js`, `TailwindCSS` with _*custom designed component system*_
+      - *Backend:* `Go`, `Fiber`, `GRPC`, `Nest.js`, `NodeJS`, `Common LISP`
+
+- *OOO "PROKSI"* | April 2023 - April 2024, 1 year
+  - Developed a document management system for creating *IE* and *reports*.
     Specifically, generation of `PKI CSR` certificates using a patched `OpenSSL`
     for Russian GOST standards, as well as their renewal and signing by various users.
-    * Stack: `Go` `PHP` `Kafka` `PostgreSQL`
+    - *Stack:* `Go` `PHP` `Kafka` `PostgreSQL`
   - Rewrote a legacy monolith from `PHP` to `Go`, improving *performance* and *maintainability*.
   - Implemented a metrics collection system using `Grafana` and `Prometheus` for *enhanced* monitoring and insights.
   - Deployed a cloud and Kubernetes-ready infrastructure using `podman play kube`.
@@ -44,8 +68,6 @@
   * *World Smallest*^(~1.5kb)^, `JSX` based, Fine Grained Reactive `UI` Library.
     Super performant & Virtual DOM *Free*. 
     ([[https://www.reddit.com/r/javascript/comments/1b8j23r/hywerjs_world_smallest_1kb_jsxbased_reactive_ui|Reddit Post]])
-    * Example frontend using it [[https://github.com/Lights-Social/lights-web-hywer|Lights]].
-      And testing ground for changes.
 
 * [[https://github.com/ssleert/WaterMelonCoin|WaterMelonCoin]]
   * Compact *Proof-Of-Work* blockchain written in `C99`. Primarily created for reusable libraries in other projects.
@@ -53,6 +75,9 @@
 
 * [[https://github.com/zpx64/supreme-octopus|supreme-octopus]]
   * Social network with `REST API`, implemented in `Go` and `PostgreSQL`, served by `Nginx` and deployed via `Docker Compose`.
+
+* [[https://github.com/ssleert/trinity|trinity]]
+  * Chat server in *pure* `C99` without any external dependencies.
 
 * [[https://github.com/ssleert/ccc|ccc]]
   * Cache cleaning daemon in `C`. Created to address inefficient memory freeing by older kernels causing heavy `swap` usage and slowdowns in *GTA V* on `Linux`. The game would even crash due to `oom` without `swap`.
@@ -68,9 +93,9 @@
 
 === Skills ===
 * Programming Languages:
-  * `Go` `C++` `C` `Python` `PHP`
+  * `Go` `C++` `C` `Python` `PHP`, `JavaScript`
 * Database Management Systems (DBMS):
-  * `PostgreSQL(pgx)` `MySQL` `MongoDB`
+  * `PostgreSQL(pgx)` `MySQL` `MongoDB`, `SQLite3`, `ArangoDB`
 
 * DevOps Tools and Technologies:
   * `Swagger` `Docker/Podman` `ci/cd` `k8s`
