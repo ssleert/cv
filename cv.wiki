@@ -1,71 +1,85 @@
-== Семён Рябинков ==
-===== Go-разработчик / DevOps-инженер =====
+== Semyon Ryabinkov ==
+===== Software Engineer =====
 -----
 
-* Ссылки
-  * [[https://ssleert.github.io/cv/|Резюме (веб-версия)]] — [[https://ssleert.github.io/cv/|ssleert.github.io/cv]]
+* Links
+  * [[https://ssleert.github.io/cv/|Resume (web version)]] — [[https://ssleert.github.io/cv/|ssleert.github.io/cv]]
   * [[https://github.com/ssleert|GitHub]] — [[https://github.com/ssleert|github.com/ssleert]]
-  * [[https://t.me/ssleert|Telegram]] — @ssleert [предпочтительный способ связи]
-  * [[mailto:ssleert@gmail.com|Почта]] — ssleert@gmail.com
+  * [[https://t.me/ssleert|Telegram]] — @ssleert [preferred contact method]
+  * [[mailto:ssleert@gmail.com|Email]] — ssleert@gmail.com
 
-=== Опыт работы ===
-- *MTS Web Services* | июль 2025 – март 2026, 9 месяцев
-  - Участвовал в разработке *Product Manager Workplace* и *Sales Widgets System*
-  - Написал с нуля *огромный ETL-сервис* для синхронизации внутреннего каталога спецификаций продуктов MTS в Product Manager Workplace
-    - *Скорость* обработки продуктовых спецификаций более *20к/с*
-    - *Параллельная* загрузка, конвертация и сохранение
-  - Принял решение перевести межсервисное взаимодействие на единый *gRPC-контракт*
-  - Занимался *интеграцией AI агента* с `LangGraph`. С поддержкой проприетарных моделей `MWS GPT`
-    - *Векторное* хранилище на `ChromaDB`
-    - *Хранение* общих данных в `PostgreSQL`
-  - Поддерживал MCP Сервер для упрощения взаимодействия пользователей с рабочим местом
-  - Объявил несколько сервисов устаревшими и полностью удалил их использование -> заметно выросли *стабильность* и *поддерживаемость* системы
-  - Перевёл большую часть системы с legacy *REST API* на современный *GraphQL*-подход
-    - *Повысил* среднюю *скорость* загрузки данных на *300мс*
-  - Стек: `Go`, `GraphQL`, `PostgreSQL`, `k8s`, `Kafka`, `Redis`, `OpenSearch`
+=== Work Experience ===
+- *SberBank* - *Lead Software Engineer* | March 2025 – September 2026, 6 months
+  - Led development of the *Credit Potential Scoring System* powering 11 core SberBank services, handling peak loads of *40,000+ requests per second*
+  - Designed, trained, and maintained *10+ neural network models* for multi-metric credit analysis and risk assessment
+  - Delivered ~*2× performance improvement* through system-wide optimizations, validated by benchmarks
+  - Built end-to-end credit condition recommendation engine:
+    - Developed *20+ heuristics* targeting client solvency and NPV
+    - Increased loan accept rate by *2 percentage points*
+  - Refactored and eliminated *30,000+ lines* of legacy code, significantly improving maintainability and reducing technical debt
+  - Fine-tuned internal risk-management LLMs based on *Qwen3.6-35B* for production decisioning
+  - Migrated *95% of all development* to a Spec-Driven approach using OpenSpec and a suite of internal skills, significantly accelerating delivery and improving consistency
+  - Built an *agentic RAG pipeline* with `LangChain` for intelligent search across credit strategy behavior and government regulatory changes, enabling precise matching and faster decision support
+  - Stack: `Go`, `Valkey/Redis`, `Temporal`
+  - Internal stack: `Platform V DropApp`, `Tarantool DB`, `Strategy Flow Lambda`
 
-- *Antarex Payment Solutions* | апрель 2024 – апрель 2025, 1 год
-  - Участвовал в разработке *мультивалютной платёжной системы* и *P2P-эквайринга*
-  - Реализовал поддержку инвойсов и выплат для валют: PHP, KES, GHS, TJS, KZT, TRY, AZN, а также трансграничные переводы через *Систему быстрых платежей*
-  - Разработал *более 20 интеграций* с внешними платёжными решениями
-  - Спроектировал систему верификации и синхронизации транзакций с внешними системами
-  - Реализовал систему вывода на баланс мобильных операторов (Билайн, МТС, МегаФон)
-  - Переписал и отрефакторил более 30 сервисов
-  - Создал большое количество утилитарных систем, ускоряющих и упрощающих подключение новых платёжных провайдеров
-  - Стек: `Go`, `PostgreSQL`, `Kafka`, `ClickHouse`, `Redis`
+- *MTS Web Services* - *Senior Software Engineer* | July 2025 – March 2026, 9 months
+  - Participated in the development of *Product Manager Workplace* and *Sales Widgets System*
+  - Built from scratch a large-scale *ETL service* for synchronizing MTS’s internal product specifications catalog into Product Manager Workplace
+    - *Processing speed* of product specifications > *20k/s*
+    - *Parallel* loading, conversion, and storage
+  - Made the decision to migrate inter-service communication to a unified *gRPC contract*
+  - Worked on *AI agent integration* with `LangGraph`. With support for proprietary `MWS GPT` models
+    - *Vector* store on `ChromaDB`
+    - *Shared data storage* in `PostgreSQL`
+  - Maintained MCP Server to simplify user interaction with the workplace
+  - Deprecated several services and completely removed their usage → significantly improved *stability* and *maintainability* of the system
+  - Migrated a large part of the system from legacy *REST API* to a modern *GraphQL* approach
+    - *Increased* average data loading *speed* by *300ms*
+  - Stack: `Go`, `GraphQL`, `PostgreSQL`, `k8s`, `Kafka`, `Redis`, `OpenSearch`
 
-- *Russian Robots Startup* | февраль 2025 – март 2025, 1 месяц
-  - Руководил разработкой прототипа *агрегатора новостей, заказчиков, поставщиков и интеграторов* в сфере робототехники в России
-  - Стек:
-    - Фронтенд: `Next.js`, `shadcn`, `TailwindCSS`
-    - Бэкенд: `NodeJS`, `Express.js`, `SQLite3`
+- *Antarex Payment Solutions* | April 2024 – April 2025, 1 year
+  - Participated in the development of a *multi-currency payment system* and *P2P acquiring*
+  - Implemented support for invoices and payouts for currencies: PHP, KES, GHS, TJS, KZT, TRY, AZN, as well as cross-border transfers via the *Faster Payments System*
+  - Developed *more than 20 integrations* with external payment solutions
+  - Designed a system for transaction verification and synchronization with external systems
+  - Implemented a system for withdrawals to mobile operator balances (Beeline, MTS, MegaFon)
+  - Rewrote and refactored more than 30 services
+  - Created a large number of utility systems that accelerate and simplify onboarding of new payment providers
+  - Stack: `Go`, `PostgreSQL`, `Kafka`, `ClickHouse`, `Redis`
 
-- *Liquid Crypto Wallet* | октябрь 2024 – декабрь 2024, 3 месяца
-  - Занимался техническим лидированием при разработке крипто-кошелька с акцентом на *открытость* и *безопасность*
-  - Имею опыт интеграции с фиатными системами для удобного обмена
-  - Стек:
-    - Фронтенд: `Next.js`, `TailwindCSS` + собственная система компонентов
-    - Бэкенд: `Go`, `Fiber`, `gRPC`, `Nest.js`, `NodeJS`, `Common LISP`
+- *Russian Robots Startup* | February 2025 – March 2025, 1 month
+  - Led the development of a prototype *aggregator of news, customers, suppliers and integrators* in the robotics field in Russia
+  - Stack:
+    - Frontend: `Next.js`, `shadcn`, `TailwindCSS`
+    - Backend: `NodeJS`, `Express.js`, `SQLite3`
 
-- *ООО "ПРОКСИ"* | апрель 2023 – апрель 2024, 1 год
-  - Разрабатывал систему документооборота для создания ИП и сдачи отчётности
-  - Реализовал генерацию, продление и подписание сертификатов `PKI CSR` по российским ГОСТ-стандартам (патченный OpenSSL)
-  - Переписал legacy-монолит с `PHP` на `Go` → сильно выросли производительность и удобство поддержки
-  - Внедрил систему сбора метрик (`Prometheus` + `Grafana`)
-  - Развернул инфраструктуру, готовую к облаку и Kubernetes (использовал `podman play kube`)
-  - Значительно повысил надёжность системы за счёт большого количества интеграционных тестов
-  - Стек: `Go`, `PHP`, `Kafka`, `PostgreSQL`
+- *Liquid Crypto Wallet* | October 2024 – December 2024, 3 months
+  - Technical leadership during the development of a crypto wallet focused on *openness* and *security*
+  - Experience integrating with fiat systems for convenient exchange
+  - Stack:
+    - Frontend: `Next.js`, `TailwindCSS` + custom component system
+    - Backend: `Go`, `Fiber`, `gRPC`, `Nest.js`, `NodeJS`, `Common LISP`
 
-=== Образование / хакатоны ===
-- *Московский физико-технический институт (национальный исследовательский университет)* | 2025 - 2029
-  - Физтех-школа Прикладной *Математики и Информатики*
-- *DEMHACK 7* | 29 сентября – 1 октября 2023
-  - Разработал систему анализа DNS-запросов и автоматического обхода блокировок сайтов на основе открытых списков заблокированных ресурсов разных стран
-  - Реализовал автоматический подбор и кэширование рабочих прокси
+- *OOO "PROXY"* | April 2023 – April 2024, 1 year
+  - Developed a document management system for sole proprietorship registration and tax reporting
+  - Implemented generation, renewal and signing of `PKI CSR` certificates according to Russian GOST standards (patched OpenSSL)
+  - Rewrote a legacy monolith from `PHP` to `Go` → significantly improved performance and maintainability
+  - Introduced metrics collection system (`Prometheus` + `Grafana`)
+  - Deployed cloud- and Kubernetes-ready infrastructure (used `podman play kube`)
+  - Significantly increased system reliability through a large number of integration tests
+  - Stack: `Go`, `PHP`, `Kafka`, `PostgreSQL`
 
-== Навыки ==
-- Языки - `Русский`, `Английский B2`
-- Технические
+=== Education / Hackathons ===
+- *Moscow Institute of Physics and Technology (National Research University)* | 2025 - 2029
+  - Phystech School of Applied *Mathematics and Computer Science*
+- *DEMHACK 7* | 29 September – 1 October 2023
+  - Developed a system for analyzing DNS queries and automatic bypass of website blocks based on open lists of blocked resources from different countries
+  - Implemented automatic selection and caching of working proxies
+
+== Skills ==
+- Languages - `Russian`, `English B1`
+- Technical
   - `Go`, `Rust`, `Python`, `Java`, `JavaScript`, `linux`,
     `PostgreSQL`, `MySQL`, `Redis`, `GraphQL`, `Kafka`,
     `Docker`, `Kubernetes`, `Git`
